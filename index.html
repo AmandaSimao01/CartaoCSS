@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cartão de Visitas da Amanda</title>
+        <style>
+            .body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f5;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+            }
+
+            .box {
+                width: 800px;
+                height: 400px;
+                background-color: rgb(194, 138, 247);
+                margin: 20px;
+                padding: 25px;
+                position: relative;
+                border-radius: 15px;
+            }
+
+            .img {
+                border-radius: 50%;
+                border: 5px solid;
+                border-color: rgb(255, 240, 34) ;
+                position: absolute;
+                top: 80px;
+                left: 110px;
+                width: 250px;
+                height: 250px;
+                z-index: 1;
+            }
+
+            .fonte {
+                font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+                font-size: 1.5em;
+                text-align: right;
+                color: white;
+            }
+
+            .fonte2 {
+                font-family: 'Andale Mono', serif;
+                font-size: 1.3em;
+                text-align: right;
+                line-height: 1.8;
+                color: white;
+            }
+
+            .retangulo {
+                background-color: rgb(255, 240, 34);
+                position: absolute;
+                width: 250px;
+                height: 450px;
+                top: -16px;
+                left: -5px;
+                border-radius: 15px;
+                z-index: 0;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+
+            .link {
+                color: rgb(194, 138, 247);
+                background-color: white;
+                position: absolute;
+                width: 150px;
+                height: 45px;
+                top: 350px;
+                right: 230px;
+                border-radius: 15px;
+                z-index: 0;
+                text-align: center;
+                font-size: 1.2em;
+            }
+
+            .link2 {
+                color: rgb(194, 138, 247);
+                background-color: white;
+                position: absolute;
+                width: 150px;
+                height: 45px;
+                top: 350px;
+                right: 45px;
+                border-radius: 15px;
+                z-index: 0;
+                text-align: center;
+                font-size: 1.2em;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="box">
+                <p class="retangulo"></p>
+                <img class="img" src="imgs/amanda.png">
+                <section class="fonte">
+                    <h1>Olá!</h1>
+                    <p>Eu me chamo Amanda da Silva Simão.</p>
+                </section>
+                <aside class="fonte2">
+                    <ol>
+                        <li>Professora de Matemática</li>
+                        <li><b>Email:</b> amanda.simao@aluno.ifce.edu.br</li>
+                        <li><b>Telefone:</b> +55 85 9 8780-7810</li>
+                    </ol>
+                    <div>
+                        <a class=link href="https://instagram.com/eimanda99/" target="_blank">Instagram</a>
+                        <a class= link2 href="https://x.com/eimandapanda/" target="_blank">X</a>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </body>
+</html>
